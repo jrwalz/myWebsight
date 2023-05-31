@@ -1,0 +1,128 @@
+@charset "utf-8";
+/*
+    Student: Jerry Ray Walz Jr.
+    Project: CIS233DA
+    Assignment: Final Project
+    Form Style Sheet
+    Filename: contact.css
+*/
+
+html {
+    height: 100%;
+    width: 100%
+}
+
+#section1 {
+    grid-area: section1;
+}
+
+/* Main grid for contact*/
+main {
+    display: grid;
+    height: 100%;
+    grid-area: main;
+    grid-template-columns: auto;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "section1"
+    ".";
+    justify-items: center;
+    justify-content: center;
+    align-items: top;
+    align-content: top;
+    overflow: auto;
+}
+
+/* This is the Pseudo Element Requirement */
+section#section1::before {
+    content: "For potential future follow up,";
+    font-size: 1.0em;
+    padding-top: .4em;
+    text-align: center;
+}
+
+#submit, #reset {
+    font-family: Papyrus, fantasy; font-size: 1.2em; font-style: normal; font-variant: normal; font-weight: 700; line-height: 17.6px;
+    background-color: #bfd7cb;
+}
+
+/* This is set up to allow the user to scroll through the choices
+    for user Roles */
+select {
+    display: block;
+    overflow-y: auto;
+    width: 200px;
+    height: 30px;
+    font-size: 1.1em;
+}
+
+/* This was to bring what the user sees down to the size of an input box */
+option {
+    padding: 2px 0px 2px 5px;
+}
+
+fieldset {
+    border-radius: 15px;
+    padding: .2em;
+    background-color: #bfd7cb;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.0em;
+}
+
+label {
+   display: block;
+   font-size: .7em;
+}
+
+select#acctype {
+    width: 140px;
+    height: 24px;
+ }
+ 
+ input[type="submit"], input[type="reset"] {
+    display: block;
+    font-size: .5em;
+ }
+
+/* To help with validation */
+input:invalid:focus {
+    background-color: rgba(180, 50, 50, 0.20);
+}
+
+input:valid:focus {
+    background-color: rgba(50, 180, 50, 0.2);
+}
+
+/* Footer adjustments */
+a {
+    font-weight: bolder;
+}
+
+#mainform {
+    position: relative;
+    top: 0.0em;
+}
+
+#mainform form {
+    position: absolute;
+    margin-top: 0.0em;
+}
+
+div#mainform input {
+    font-size: .8em;
+}
+
+/* Adjustments to the form buttons container */
+.formbuttons {
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+textarea {
+    max-height: 80px;
+    max-width: 200px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Meta Viewport Requirement 11/2/2022 -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"><!-- Meta Compatible Requirement 11/2/2022 -->
+        <meta name="author" content="Jerry Ray Walz Jr."><!-- Meta Author Requirement 11/2/2021-->
+        <meta name="keywords" content="American Northwest, Contact, Jerry Ray Walz Jr."><!-- Meta keywords Requirement 11/25/2022-->
+        <meta name="description" content="Contact Form"><!-- Meta Description Requirement 11/2/2022 -->
+        <title>Contact Form</title><!--Title Requirement 11/2/2022 -->
+        <link href="css/reset.css" type="text/css" rel="stylesheet" /><!-- Reset Requirements 11/2/2022 -->
+        <link href="css/styles.css" type="text/css" rel="stylesheet" /><!-- Styles Requirement 11/2/2022 -->
+        <link href="css/contact.css" type="text/css" rel="stylesheet">
+        <script src="js/formsubmit.js" async></script>
+    </head>
+
+    <body>
+    <header><!-- Header Requirement 11/2/2022 -->
+        <nav id="mainNav"><!-- Nav Requirement 11/2/2022 -->
+            <ul>
+                <li><a href="index.html">Home Page</a></li><!-- links Requirement 11/2/2022 -->
+            </ul>
+            <ul>
+                <li><a href="mammals.html">Mammals</a></li>
+            </ul>
+            <ul>
+                <li><a href="sealife.html">Sea Life</a></li>
+            </ul>
+            <ul>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main><!-- Main Requirement 11/2/2022 -->
+        <section id="section1"><!-- Section Requirement 11/2/2022 -->
+            <div id="mainform">
+            <form action="/login_secure.php" method="get" autocomplete="on"><!-- Form Requirement 12/2/2022 -->
+                <fieldset id="login" ><!-- Fieldset Requirement 12/2/2022 -->
+                    <legend>Enter Account Information</legend><!-- Legend Requirement 12/2/2022 -->
+                    <label id="dropdown" for="acctype">Account Type</label><!-- Label Requirement 12/2/2022 -->
+                    <select id="acctype" name="accounttype" size="3">
+                        <option value="Guest" type="submit">Guest</option>
+                        <option value="Member">Member</option>
+                        <option value="Administrator">Administrator</option>
+                    </select>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" type="text" minlength="3" maxlength="20" placeholder="Your Name" 
+                        required>  <!-- Min, Max, Placeholder, autocomplete, required Requirement 12/2/2022 -->
+                    <label for="email">Email</label>
+                    <input type="email" id="email" minlength="7" maxlength="24" placeholder="some@email.com"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><!-- Pattern Requirement 12/2/2022 -->
+                    <label for="telephone">Telephone</label>
+                    <input id="telephone" type="tel" placeholder="111-111-1111" minlength="10" maxlength="10" 
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <label for="pwd">Password</label>
+                    <input id="pwd" type="password" minlength="8" maxlength="20" placeholder="********" 
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    <label for="message">Comment</label>
+                    <textarea id="message" name="message" rows="10" cols="30"></textarea>
+                </fieldset>
+                <label for="reset"></label>
+                <div class="formbuttons">
+                    <input id="submit" type="submit" value="Login"><!-- Submit button Requirement 12/2/2022 -->
+                    <input id="reset" type="reset" value="Reset"><!-- Rest Button Requirement 12/4/2022-->
+                </div>
+            </form>
+            </div>
+        </section>
+    </main>
+
+    <footer><!-- Footer Requirement 11/2/2022 -->
+        <address class="footerleft"><!-- Address Requierment 12/2/2022 -->
+            Written by <a href="mailto:jerryraywalz@gmail.com">Jerry Ray Walz Jr</a><br>
+            Southern Ave.<br>
+            Phoenix, AZ 85041<br>
+        </address>
+        <div class="footerright">
+            <a href="https://stateofwatourism.com/wildlife-in-washington-state/"><p>Washington State Tourism</p></a>
+            <a href="https://wdfw.wa.gov/species-habitats/species"><p>Fish and Wildlife in Washington</p></a>
+            <a href="https://www.nationalgeographic.org/education/british-columbia/"><p>National Geographic British Columbia</p></a>
+        </div>
+    </footer>
+</body>
+</html>

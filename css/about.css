@@ -1,0 +1,96 @@
+@charset "utf-8";
+/*
+   Jerry Ray Walz Jr.
+   12/6/2022
+   Final Project: CIS233DA
+   Filename: about.css
+*/
+
+/* Main grid*/
+#aboutmain {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: 3% 30% 67%;
+	grid-template-areas: 
+	". ."
+	"section1 section1"
+	"section2 section2";
+    align-items: center;
+	justify-content: flex-start;
+	margin: 0.0em auto;
+	overflow: auto;
+}
+
+#section1 {
+	display: grid;
+	padding-top: 2.0em;
+    grid-area: section1;
+}
+
+/* Sub Grid*/
+#aboutsection2 {
+	display: inline-flex;
+	flex-flow: row;
+	grid-area: section2;
+}
+
+article p {
+	font-size: .8em;
+}
+
+#iframe p {
+	font-size: .5em;
+	padding-left: 2.0em;
+}
+
+blockquote {
+	font-size: .8em;
+	text-indent: 0.0em;
+	margin: 1.0em 2.0em 2.0em;
+	word-break: keep-all;
+	word-wrap: break-word;
+}
+
+#video {
+	grid-area: video;
+}
+
+#video, #video p {
+	min-height: 50%;
+}
+
+iframe {
+	border: none;
+}
+
+/**********************************/
+/* Container for the table*/
+#table {
+	grid-area: stats;
+}
+
+table {
+	background-color: #a5dddb;
+    font-size: 0.5em;
+	border: .3em solid black;
+	padding: 0.3em;
+}
+
+td, tr, th {
+	background-color: #bfd7cb;
+	border: 0.3em solid black;
+	padding: 0.3em;
+}
+
+th {
+	background-color: #a5dddb;
+	height: 25%;
+}
+
+.index {
+	background-color: #a5dddb;
+}
+
+table#table:hover {
+    cursor: pointer;
+}

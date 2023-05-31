@@ -1,0 +1,205 @@
+@charset "utf-8";
+/*
+   Jerry Ray Walz Jr.
+   11/2/2022
+   Final Project: CIS233DA
+   Filename: styles.css
+
+   This file contains the layout styles used in the index.html page.
+*/
+
+/* Sets the basic format for background image, page size, and font.*/
+html {
+	font-family: Papyrus, fantasy; font-size: 1.2em; font-style: normal; font-variant: normal; font-weight: 700; line-height: 17.6px;
+	height: 100%;	
+	background: url(/images/small_islands.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Body is displayed as a grid */
+/* Do not include the footer in the responsive design, but set it to display: grid; */
+body {
+	display: grid;
+	grid-template-columns: 1f;
+	grid-template-rows: 7% 1fr;
+	grid-template-areas: 
+		"header"
+		"main";
+
+	height: 100%;
+	width: 100%;
+	max-width: 800px;
+	margin: 0.0em auto;
+	color: black;
+	font-weight: bold;
+	overflow-y: hidden;
+}
+
+/* First container that is the inner guide for the grid and
+   for the two inner sections. */
+main {
+	display: grid;
+	grid-area: main;
+	grid-template-columns: repeat(8, auto);
+	/*grid-template-columns: repeat(3, auto);*/
+	grid-template-rows: 35% 65%;
+	grid-template-areas: 
+	"section1 section1 section1 section1 section1 section1 section1 section1"
+	"section2 section2 section2 section2 section2 section2 section2 section2";
+	width: 100%;
+	height: 100%;
+	padding: .25em;
+	align-content: center;
+	align-items: center;
+	justify-items: center;
+	justify-content: space-between;
+	margin: 0.0em auto;
+	overflow-y: auto;
+	background-color: rgba(46, 184, 149, 0.9);
+	box-shadow: rgba(46, 184, 149, 0.9) 10px 0px 15px,  rgba(46, 184, 149, 0.9) -10px 0px 15px;
+}
+
+/* Article Section */
+section#section1 {
+	display: grid;
+	grid-area: section1;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Images Section */
+section#section2 {
+	grid-area: section2;
+	display: inline-flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: auto 1.2em;
+}
+
+article {
+	word-break: keep-all;
+	word-wrap: break-word;
+	margin: auto 5.0em;
+	text-indent: .3in;
+}
+
+h3 {
+	text-shadow: black 3px 3px 8px;
+	font-weight: bolder;
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+
+.adjustedsize p {
+	text-align: left;
+}
+
+p, figcaption {
+	font-size: .8em;
+}
+
+/* Sets the maximum width and height for the images */
+section#section2 div {
+	max-width: 400px;
+	max-height: 250px;
+}
+
+/*rotate image on hover*/
+section#section2 .adjustedsize img:hover {
+	transform: rotate3d(0, 180, 0, 180deg);
+}
+
+/* Force resize of the images for secion2 */
+.adjustedsize img {
+	width: 250px;
+	max-height: 160px;
+	background-size: cover;
+	border: 1px solid #ddd;
+  	border-radius: 4px;
+  	padding: 5px;
+  	width: 250px;
+}
+
+/*Transform nav choices on hover*/
+nav#mainNav li:hover {
+	transform: translateX(-10px) translateY(10px) scale(1.2, 1.2);
+}
+
+/* Set to maximum width for images and video */
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* Conditions for the header element */
+header {
+	display: grid;
+	min-height: 2.0em;
+	width: 100%;
+	background: url(/images/seagulls.png);
+	background-size: cover;
+	opacity:0.9;
+	background-repeat: round;
+	box-shadow: rgba(171, 161, 138, 0.9) 10px 0px 15px,  rgba(171, 161, 138, 0.9) -10px 0px 15px;
+}
+
+/* Sets the parameters for the navigation */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 1.0em;
+	padding-right: 5.0em;
+}
+
+nav a:hover {
+	box-shadow:rgb(114, 163, 151) 6px 3px 20px;
+	background-color: rgba(171, 161, 138, 0.9)
+}
+
+nav a {
+	clear: both;
+	font-size: 80%;
+	margin-left: 0.0em;
+	padding: 0.0em 0.5em;
+	height: 50px;
+	color: black;
+	font-weight: bold;
+	background-color: rgba(114, 163, 151, 0.9);
+}
+
+/* Sets the conditions for the footer with two inner divs. */
+footer {
+	display: grid;
+	bottom: 0.0em;
+	height: 100%;
+	min-height: 2.5em;
+	font-size: .8em;
+	background: url(/images/wetbeach1.png);
+	background-size: cover;
+	opacity:0.8;
+	background-repeat: round;
+	box-shadow: rgba(75, 176, 191, 0.9) 10px 0px 15px,  rgba(75, 176, 191, 0.9) -10px 0px 15px;
+}
+
+address {
+    display: block;
+    color: rgb(114, 163, 151);
+    margin: auto auto;
+    line-height: 1.6em;
+    font-size: .6em;
+}
+
+.footerright {
+	display: grid;
+	margin: auto auto;
+	grid-column: 8/8;
+	font-size: 0.6em;
+	line-height: 1.8em;
+	text-align: center;
+}
+
+div.footerright p {
+	color: rgb(114, 163, 151);
+}

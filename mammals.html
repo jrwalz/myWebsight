@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Jerry Ray Walz Jr."><!-- Meta Author Requirement 11/2/2021-->
+        <meta name="keywords" content="American, Pacific, Northwest, Ecosystem, Pictures, Mammals, Habitat"><!-- Meta keywords Requirement 11/25/2022-->
+        <meta name="description" content="Pictures of Mammals"><!-- Meta Description Requirement 11/2/2022 -->
+        <title>Mammals in the American Northwest</title><!-- Title Requirement 11/25/2022 -->
+        <link href="css/reset.css" type="text/css" rel="stylesheet" /><!-- Reset Requirements 11/2/2022 -->
+        <link href="css/styles.css" type="text/css" rel="stylesheet" /><!-- Styles Requirement 11/2/2022 -->
+        <link href="css/slider.css" type="text/css" rel="stylesheet" />
+        <script async src="js/slider.js"></script>
+    </head>
+
+    <body>
+    <header><!-- Header Requirement 11/2/2022 -->
+        <nav id="mainNav"><!-- Nav Requirement 11/2/2022 -->
+            <ul>
+                <li><a href="index.html">Home Page</a></li><!-- links Requirement 11/2/2022 -->
+            </ul>
+            <ul>
+                <li><a href="mammals.html">Mammals</a></li>
+            </ul>
+            <ul>
+                <li><a href="sealife.html">Sea Life</a></li>
+            </ul>
+            <ul>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <!--  Clickable Images on 11/6/2022 -->
+    <main id="slider">
+        <section id="section1"><!-- Section Requirement 11/2/2022 -->
+            <!-- Article Requirement 11/2/2022 -->
+            <article>
+                <h3><b>Mammals of the American Northwest</b></h3>
+                 <p>The animals may not seem that unique, but there are many unique species with some actual
+                    varieties that may be hard to find elsewhere, such as in the cases of subspecies.  There
+                    are different varieties of the same species with three different types of Lynx cats of
+                    which primarily dwell in the colder climates.
+                </p>
+            </article>
+        </section>
+        <!--  Clickable Images on 11/6/2022 -->
+        <section id="section2">
+            <div class="slideshow-container">
+                <div id="prev"><!--  Moves the slide backwards though plusSlides method and index of -1-->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 7</div>
+                    <figure>                                                                    <!-- Figure Requirement 12/2/2022-->
+                        <img src="images/blackbear.png" alt="Black Bear">
+                        <figcaption class="comment">Blackbears are mostly associated with being in the forested
+                            ares but sometimes venture into populations.
+                        </figcaption>   <!-- Ficaption Requirement 12/2/2022 -->
+                    </figure>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 7</div>
+                    <figure>
+                        <img src="images/cascaderedfox.png" alt="Cascade Fox">
+                        <figcaption class="comment">Cascade Foxes typically enhabit alpine and subalpine areas.
+                              Fun fact, they live in the Cascade Range in Washinton, but don't like 
+                              wet areas.
+                        </figcaption>
+                    </figure>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 7</div>
+                    <figure>
+                        <img src="images/lynx-omak.png" alt="Canada Lynx">
+                        <figcaption class="comment">The Canada Lynx is a Medium-sized cat that does well in this climate, even Alaska.</figcaption>
+                    </figure>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 7</div>
+                    <figure>
+                        <img src="images/american-badger.png" alt="American Badger">
+                        <figcaption class="comment">This American Badger appears to be digging for ground squirrels.</figcaption>
+                    </figure>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 7</div>
+                    <figure>
+                        <img src="images/black-tailed-deer.png" alt="Black Tailed Deer">
+                        <figcaption class="comment">Black Tailed Deer are a subspecies of the mule deer.</figcaption>
+                    </figure>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 7</div>
+                    <figure>
+                        <img src="images/bald-eagle.png" alt="Bald Eagle">
+                        <figcaption class="comment">Bald Eagles are apex, but they will also follow Sea Gulls to spot out food.</figcaption>
+                    </figure>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 7</div>
+                    <figure>
+                        <img src="images/american-pika.png" alt="American Pika">
+                        <figcaption class="comment">The American Pika dwell on the fringes of the tree lines 
+                            and find comfort on the slopes of rocky areas within the forest.</figcaption>
+                    </figure>
+                </div>
+                <div id="next">
+                <!--  Moves the slide forward though plusSlides method and index of +1-->
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div> <!--  End of Slideshow Container  -->
+        </section>
+    </main>
+
+    <footer><!-- Footer Requirement 11/2/2022 -->
+        <address class="footerleft"><!-- Address Requierment 12/2/2022 -->
+            Written by <a href="mailto:jerryraywalz@gmail.com">Jerry Ray Walz Jr</a><br>
+            Southern Ave.<br>
+            Phoenix, AZ 85041<br>
+        </address>
+        <div class="footerright">
+            <a href="https://stateofwatourism.com/wildlife-in-washington-state/"><p>Washington State Tourism</p></a>
+            <a href="https://wdfw.wa.gov/species-habitats/species"><p>Fish and Wildlife in Washington</p></a>
+            <a href="https://www.nationalgeographic.org/education/british-columbia/"><p>National Geographic British Columbia</p></a>
+        </div>
+    </footer>
+</body>
+</html>
